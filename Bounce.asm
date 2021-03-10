@@ -1,0 +1,9 @@
+OUT
+ADD $8
+JC  $4
+JMP $0
+SUB $8
+OUT
+JZ  $0
+JMP $4
+#1
