@@ -47,7 +47,13 @@ namespace Assembler
 
             while ((code = reader.ReadLine()) != null)
             {
+                if (code.StartsWith(";"))
+                    continue;
+
                 var tokens = codePattern.Match(code);
+                if (!tokens.Success)
+                    //catch the error in next loop ¯\_(ツ)_/¯
+                    break;
                 int offset = 0;
                 if (tokens.Groups["opcode"].Success)
                     offset = 1;
@@ -65,6 +71,9 @@ namespace Assembler
 
             while ((code = reader.ReadLine()) != null)
             {
+                if (code.StartsWith(";"))
+                    continue;
+
                 var tokens = codePattern.Match(code);
 
                 if (address > 255)
@@ -108,7 +117,10 @@ namespace Assembler
                         writer.Write((byte)address++);
                         operand = int.Parse(tokens.Groups["operand"].Captures[1].Value);
                         if (tokens.Groups["operandtype"].Captures[1].Value == "$")
-                            writer.Write((sbyte)offset + 1);
+                        {
+                            offset = ScanCodes.Take(operand).Sum();
+                            writer.Write((sbyte)offset);
+                        }
                         else
                             writer.Write((sbyte)operand);
                     }
