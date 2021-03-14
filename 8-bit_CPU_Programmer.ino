@@ -66,7 +66,7 @@ void setup() {
       digitalWrite(WRITE_EN, LOW);
       delay(1);
       digitalWrite(WRITE_EN, HIGH);
-      delay(250);
+      delay(10);
     }
     machineCodeHex.close();
   }

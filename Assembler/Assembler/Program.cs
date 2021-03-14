@@ -41,7 +41,7 @@ namespace Assembler
             using var writer = new BinaryWriter(output);
 
             string code;
-            var codePattern = new Regex(@"^\s*((?<opcode>(\w+))(\s*(?=\$|\#))*)*((?<operandtype>(\$|\#))(?<operand>(-?\d+))(\,\s*(?=\$|\#))*)*$");
+            var codePattern = new Regex(@"^\s*((?<opcode>(\w+))(\s*(?=\$|\#))*)*((?<operandtype>(\$|\#))(?<operand>(-?\d+)\s*)(\,\s*(?=\$|\#))*)*(\s+\;[\s\w]*)*$");
             var address = 0;
             bool isSuccessful = true;
 
@@ -80,13 +80,16 @@ namespace Assembler
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("This program requires more than 256 bytes and cannot be run on MSAP-1!");
+                    Console.ForegroundColor = ConsoleColor.White;
                     isSuccessful = false;
                     break;
                 }
 
                 if (!tokens.Success)
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine($"Invalid code at address {address}");
+                    Console.ForegroundColor = ConsoleColor.White;
                     isSuccessful = false;
                     break;
                 }
@@ -146,7 +149,11 @@ namespace Assembler
             reader.Close();
 
             if (isSuccessful)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("HEX file generated successfully.");
+                Console.ForegroundColor = ConsoleColor.White;
+            }
         }
     }
 }
