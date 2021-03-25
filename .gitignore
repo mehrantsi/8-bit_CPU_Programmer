@@ -15,3 +15,5 @@ Assembler/Assembler/obj/Assembler.csproj.nuget.dgspec.json
 Assembler/Assembler/bin/Debug/netcoreapp3.1/Assembler.runtimeconfig.json
 Assembler/Assembler/bin/Debug/netcoreapp3.1/Assembler.runtimeconfig.dev.json
 Assembler/Assembler/bin/Debug/netcoreapp3.1/Assembler.deps.json
+Assembler.deps.json
+Assembler.runtimeconfig.json
