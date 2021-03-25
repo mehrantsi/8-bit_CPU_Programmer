@@ -12,7 +12,7 @@ Schematic of the programmer:
 ### Software
 This project contains a crude assembler that parses the code using regex. It has been developed that way for sake of simplicity at this point, but It will most likely be changed to a proper assembler for MSAP-2.
 
-The assembler job is to convert the provided assembly file to binary and modify addresses with offsets calculated depending on the OpCode and number of operands. In the end, it generates a file that must be called "machinecode.hex" in the root directory of the SD card, so the programmer can read the file and write it to MSAP-1 RAM directly.
+The assembler job is to convert the provided assembly file to binary and modify addresses with offsets calculated depending on the OpCode and number of operands. In the end, it generates a file that must be called "machinecode.hex" and has to be put in the root directory of the SD card, so the programmer can read the file and write it to MSAP-1 RAM directly.
 
 In MSAP-1 assembly, *"$"* refers to an address, *"#"* denotes an 8-bit signed number, and *";"* indicates a comment.
 The Operations supported are as follows:
@@ -24,7 +24,7 @@ ADD|$[address]|Loads the data at the provided address into register B and perfor
 SUB|$[address]|Loads the data at the provided address into register B and performs a subtract operation with data present in register A, puts the result into register A and updates the FLAGS register
 STA|$[address]|**Store A:** Stores the data present in register A in the address provided
 LDI|#[int]|**Load Immediate:** Loads the provided signed 8-bit integer into register A
-LDS|#[int], $[address]|**Load Store:** Loads the provided signed 8-bit integer into register A abd stores it in the address provided. In other words, it moves the immediate value provided into an address in memory
+LDS|#[int], $[address]|**Load Store:** Loads the provided signed 8-bit integer into register A and stores it in the address provided. In other words, it moves the immediate value provided into an address in memory
 JMP|$[address]|Resets the Program Counter to the value present at the provided address
 JC|$[address]|Resets the Program Counter to the value present at the provided address if the last arithmetic operation resulted in a carry
 JZ|$[address]|Resets the Program Counter to the value present at the provided address if the result of last arithmetic operation was zero
