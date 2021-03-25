@@ -157,6 +157,11 @@ void scrollPage() {
     machineCodeHex.close();
     _prgStart = false;
   }
+  else {
+    oled.clear();
+    oled.println("machinecode.hex");
+    oled.println("not found!");
+  }
 }
 
 void loop() {
