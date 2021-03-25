@@ -400,6 +400,22 @@ F 3 "~" H 3600 3100 50  0001 C CNN
 	1    3600 2900
 	1    0    0    -1  
 $EndComp
+Text GLabel 8100 1700 2    50   Input ~ 0
+WE
+Wire Wire Line
+	5900 3250 6200 3250
+Wire Wire Line
+	6200 3250 6200 1700
+Wire Wire Line
+	6200 1700 8100 1700
+Text GLabel 8100 1550 2    50   Input ~ 0
+PM
+Wire Wire Line
+	4900 3650 4700 3650
+Wire Wire Line
+	4700 3650 4700 1550
+Wire Wire Line
+	4700 1550 8100 1550
 Wire Bus Line
 	8100 4100 8100 5050
 Wire Bus Line
