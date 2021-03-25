@@ -90,9 +90,9 @@ Entry Wire Line
 Entry Wire Line
 	8000 4850 8100 4950
 Text Notes 8150 2500 0    50   ~ 0
-addr[0...8]
+addr[0...7]
 Text Notes 8150 4150 0    50   ~ 0
-data[0...8]
+data[0...7]
 $Comp
 L 74xx:74HC595 U1
 U 1 1 605C8A1A

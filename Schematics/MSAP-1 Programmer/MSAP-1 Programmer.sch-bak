@@ -274,7 +274,7 @@ Wire Wire Line
 	7250 5250 7250 5350
 Connection ~ 7250 5350
 Wire Wire Line
-	7250 5350 6750 5350
+	7250 5350 6850 5350
 Wire Wire Line
 	6750 4000 6750 5350
 Wire Wire Line
@@ -413,6 +413,30 @@ Wire Wire Line
 	3950 4800 6100 4800
 Wire Wire Line
 	5300 4550 5300 4950
+Wire Wire Line
+	6850 4750 6850 5350
+Connection ~ 6850 5350
+Wire Wire Line
+	6850 5350 6750 5350
+Wire Wire Line
+	6850 3100 6600 3100
+Wire Wire Line
+	6600 3100 6600 4000
+Wire Wire Line
+	6600 4000 6750 4000
+NoConn ~ 7650 5050
+NoConn ~ 7650 3400
+NoConn ~ 5900 3150
+NoConn ~ 5900 3050
+NoConn ~ 5900 2950
+NoConn ~ 4900 4250
+NoConn ~ 4900 4150
+NoConn ~ 5400 4550
+NoConn ~ 4900 3350
+NoConn ~ 4900 3050
+NoConn ~ 4900 2950
+NoConn ~ 5300 2550
+NoConn ~ 5500 2550
 Wire Bus Line
 	8100 4100 8100 5050
 Wire Bus Line
