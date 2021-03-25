@@ -1,5 +1,19 @@
 # 8-bit CPU Programmer
 
+## Overview
+This project is meant to help programming MSAP-1 (Mehran's Simple as Possible) 8-bit computer project. The idea is to set the addresses and data of SRAM in MSAP-1 while it's in programming mode and enable reviewing what has been/is going to be programmed, when MSAP-1 is in run mode. This removes the need of having dip switches for programming, and enables writing code in assembly.
+
+### Hardware
+The hardware side of this project, includes an Arduino Nano, 1 HW-125 SD card module, 2 SIPO shift registers (74HC595), 1 OLED display (128x64 with SSD1306 controller), 1 micro switch and a 10nF bypass capacitor for shift registers.
+
+Schematic of the programmer:
+![SCH](https://github.com/mehrantsi/8-bit_CPU_Programmer/blob/main/Schematics/Schematic.png)
+
+### Software
+This project contains a crude assembler that parses the code using regex. It has been developed that way for sake of simplicity at this point, but It will most likely be changed to a proper assembler for MSAP-2.
+
+The assembler job is to convert the provided assembly file to binary and modify addresses with offsets calculated depending on the OpCode and number of operands. In the end, it generates a file that must be called "machinecode.hex" in the root directory of the SD card, so the programmer can read the file and write it to MSAP-1 RAM directly.
+
 In MSAP-1 assembly, *"$"* refers to an address, *"#"* denotes an 8-bit signed number, and *";"* indicates a comment.
 The Operations supported are as follows:
 
