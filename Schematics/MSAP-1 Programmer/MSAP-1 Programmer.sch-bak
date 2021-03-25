@@ -57,6 +57,145 @@ F 3 "" H 3600 4750 50  0001 C CNN
 	1    3600 4500
 	1    0    0    -1  
 $EndComp
+Entry Wire Line
+	8000 2500 8100 2600
+Entry Wire Line
+	8000 2600 8100 2700
+Entry Wire Line
+	8000 2700 8100 2800
+Entry Wire Line
+	8000 2800 8100 2900
+Entry Wire Line
+	8000 2900 8100 3000
+Entry Wire Line
+	8000 3000 8100 3100
+Entry Wire Line
+	8000 3100 8100 3200
+Entry Wire Line
+	8000 3200 8100 3300
+Entry Wire Line
+	8000 4150 8100 4250
+Entry Wire Line
+	8000 4250 8100 4350
+Entry Wire Line
+	8000 4350 8100 4450
+Entry Wire Line
+	8000 4450 8100 4550
+Entry Wire Line
+	8000 4550 8100 4650
+Entry Wire Line
+	8000 4650 8100 4750
+Entry Wire Line
+	8000 4750 8100 4850
+Entry Wire Line
+	8000 4850 8100 4950
+Text Notes 8150 2500 0    50   ~ 0
+addr[0...8]
+Text Notes 8150 4150 0    50   ~ 0
+data[0...8]
+$Comp
+L 74xx:74HC595 U1
+U 1 1 605C8A1A
+P 7250 2900
+F 0 "U1" H 7450 3550 50  0000 C CNN
+F 1 "74HC595" H 7450 3450 50  0000 C CNN
+F 2 "" H 7250 2900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 7250 2900 50  0001 C CNN
+	1    7250 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 605F81BB
+P 7250 2050
+F 0 "#PWR?" H 7250 1900 50  0001 C CNN
+F 1 "VCC" H 7265 2223 50  0000 C CNN
+F 2 "" H 7250 2050 50  0001 C CNN
+F 3 "" H 7250 2050 50  0001 C CNN
+	1    7250 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 605FD5E2
+P 7250 5450
+F 0 "#PWR?" H 7250 5200 50  0001 C CNN
+F 1 "GND" H 7255 5277 50  0000 C CNN
+F 2 "" H 7250 5450 50  0001 C CNN
+F 3 "" H 7250 5450 50  0001 C CNN
+	1    7250 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 605CA909
+P 6750 3800
+F 0 "C1" H 6800 3900 50  0000 L CNN
+F 1 "10 nF" H 6800 3700 50  0000 L CNN
+F 2 "" H 6788 3650 50  0001 C CNN
+F 3 "~" H 6750 3800 50  0001 C CNN
+	1    6750 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 60603B97
+P 5200 2050
+F 0 "#PWR?" H 5200 1900 50  0001 C CNN
+F 1 "VCC" H 5215 2223 50  0000 C CNN
+F 2 "" H 5200 2050 50  0001 C CNN
+F 3 "" H 5200 2050 50  0001 C CNN
+	1    5200 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 6060517B
+P 4250 3000
+F 0 "#PWR?" H 4250 2850 50  0001 C CNN
+F 1 "VCC" H 4265 3173 50  0000 C CNN
+F 2 "" H 4250 3000 50  0001 C CNN
+F 3 "" H 4250 3000 50  0001 C CNN
+	1    4250 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6060E8D0
+P 2800 4300
+F 0 "#PWR?" H 2800 4050 50  0001 C CNN
+F 1 "GND" H 2805 4127 50  0000 C CNN
+F 2 "" H 2800 4300 50  0001 C CNN
+F 3 "" H 2800 4300 50  0001 C CNN
+	1    2800 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 606127FA
+P 5300 4950
+F 0 "#PWR?" H 5300 4700 50  0001 C CNN
+F 1 "GND" H 5305 4777 50  0000 C CNN
+F 2 "" H 5300 4950 50  0001 C CNN
+F 3 "" H 5300 4950 50  0001 C CNN
+	1    5300 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 605CCA5C
+P 3600 2900
+F 0 "SW1" H 3600 3185 50  0000 C CNN
+F 1 "SW_Push" H 3600 3094 50  0000 C CNN
+F 2 "" H 3600 3100 50  0001 C CNN
+F 3 "~" H 3600 3100 50  0001 C CNN
+	1    3600 2900
+	1    0    0    -1  
+$EndComp
+Text GLabel 8100 1700 2    50   Input ~ 0
+WE
+Text GLabel 8100 1550 2    50   Input ~ 0
+PM
 Wire Wire Line
 	5900 3950 6450 3950
 Wire Wire Line
@@ -125,77 +264,8 @@ Wire Wire Line
 	7650 4750 8000 4750
 Wire Wire Line
 	7650 4850 8000 4850
-Entry Wire Line
-	8000 2500 8100 2600
-Entry Wire Line
-	8000 2600 8100 2700
-Entry Wire Line
-	8000 2700 8100 2800
-Entry Wire Line
-	8000 2800 8100 2900
-Entry Wire Line
-	8000 2900 8100 3000
-Entry Wire Line
-	8000 3000 8100 3100
-Entry Wire Line
-	8000 3100 8100 3200
-Entry Wire Line
-	8000 3200 8100 3300
-Entry Wire Line
-	8000 4150 8100 4250
-Entry Wire Line
-	8000 4250 8100 4350
-Entry Wire Line
-	8000 4350 8100 4450
-Entry Wire Line
-	8000 4450 8100 4550
-Entry Wire Line
-	8000 4550 8100 4650
-Entry Wire Line
-	8000 4650 8100 4750
-Entry Wire Line
-	8000 4750 8100 4850
-Entry Wire Line
-	8000 4850 8100 4950
-Text Notes 8150 2500 0    50   ~ 0
-addr[0...8]
-Text Notes 8150 4150 0    50   ~ 0
-data[0...8]
-$Comp
-L 74xx:74HC595 U1
-U 1 1 605C8A1A
-P 7250 2900
-F 0 "U1" H 7450 3550 50  0000 C CNN
-F 1 "74HC595" H 7450 3450 50  0000 C CNN
-F 2 "" H 7250 2900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf" H 7250 2900 50  0001 C CNN
-	1    7250 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 605F81BB
-P 7250 2050
-F 0 "#PWR?" H 7250 1900 50  0001 C CNN
-F 1 "VCC" H 7265 2223 50  0000 C CNN
-F 2 "" H 7250 2050 50  0001 C CNN
-F 3 "" H 7250 2050 50  0001 C CNN
-	1    7250 2050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7250 3600 7250 3700
-$Comp
-L power:GND #PWR?
-U 1 1 605FD5E2
-P 7250 5450
-F 0 "#PWR?" H 7250 5200 50  0001 C CNN
-F 1 "GND" H 7255 5277 50  0000 C CNN
-F 2 "" H 7250 5450 50  0001 C CNN
-F 3 "" H 7250 5450 50  0001 C CNN
-	1    7250 5450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6950 3700 6950 4000
 Wire Wire Line
@@ -212,17 +282,6 @@ Wire Wire Line
 Connection ~ 6750 4000
 Wire Wire Line
 	6750 3950 6750 4000
-$Comp
-L Device:C C1
-U 1 1 605CA909
-P 6750 3800
-F 0 "C1" H 6800 3900 50  0000 L CNN
-F 1 "10 nF" H 6800 3700 50  0000 L CNN
-F 2 "" H 6788 3650 50  0001 C CNN
-F 3 "~" H 6750 3800 50  0001 C CNN
-	1    6750 3800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6750 2200 7250 2200
 Wire Wire Line
@@ -230,28 +289,6 @@ Wire Wire Line
 Wire Wire Line
 	7250 2200 7250 2050
 Connection ~ 7250 2200
-$Comp
-L power:VCC #PWR?
-U 1 1 60603B97
-P 5200 2050
-F 0 "#PWR?" H 5200 1900 50  0001 C CNN
-F 1 "VCC" H 5215 2223 50  0000 C CNN
-F 2 "" H 5200 2050 50  0001 C CNN
-F 3 "" H 5200 2050 50  0001 C CNN
-	1    5200 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 6060517B
-P 4250 3000
-F 0 "#PWR?" H 4250 2850 50  0001 C CNN
-F 1 "VCC" H 4265 3173 50  0000 C CNN
-F 2 "" H 4250 3000 50  0001 C CNN
-F 3 "" H 4250 3000 50  0001 C CNN
-	1    4250 3000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4250 3000 4250 3600
 Wire Wire Line
@@ -263,17 +300,6 @@ Wire Wire Line
 Wire Wire Line
 	4250 4050 4250 3600
 Connection ~ 4250 3600
-$Comp
-L power:GND #PWR?
-U 1 1 6060E8D0
-P 2800 4300
-F 0 "#PWR?" H 2800 4050 50  0001 C CNN
-F 1 "GND" H 2805 4127 50  0000 C CNN
-F 2 "" H 2800 4300 50  0001 C CNN
-F 3 "" H 2800 4300 50  0001 C CNN
-	1    2800 4300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3450 4150 3450 4050
 Wire Wire Line
@@ -287,19 +313,6 @@ Wire Wire Line
 Wire Wire Line
 	2800 3950 2800 4050
 Connection ~ 2800 4050
-$Comp
-L power:GND #PWR?
-U 1 1 606127FA
-P 5300 4800
-F 0 "#PWR?" H 5300 4550 50  0001 C CNN
-F 1 "GND" H 5305 4627 50  0000 C CNN
-F 2 "" H 5300 4800 50  0001 C CNN
-F 3 "" H 5300 4800 50  0001 C CNN
-	1    5300 4800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5300 4800 5300 4550
 Wire Wire Line
 	4900 3550 4550 3550
 Wire Wire Line
@@ -357,14 +370,9 @@ Wire Wire Line
 Wire Wire Line
 	6100 4150 6100 4800
 Wire Wire Line
-	6100 4800 5300 4800
-Wire Wire Line
 	3950 4800 3950 3550
 Wire Wire Line
 	3950 3550 3900 3550
-Connection ~ 5300 4800
-Wire Wire Line
-	5300 4800 3950 4800
 Wire Wire Line
 	3900 3500 4100 3500
 Wire Wire Line
@@ -389,33 +397,22 @@ Wire Wire Line
 	4600 4100 3650 4100
 Wire Wire Line
 	3650 4100 3650 4150
-$Comp
-L Switch:SW_Push SW1
-U 1 1 605CCA5C
-P 3600 2900
-F 0 "SW1" H 3600 3185 50  0000 C CNN
-F 1 "SW_Push" H 3600 3094 50  0000 C CNN
-F 2 "" H 3600 3100 50  0001 C CNN
-F 3 "~" H 3600 3100 50  0001 C CNN
-	1    3600 2900
-	1    0    0    -1  
-$EndComp
-Text GLabel 8100 1700 2    50   Input ~ 0
-WE
 Wire Wire Line
 	5900 3250 6200 3250
 Wire Wire Line
 	6200 3250 6200 1700
 Wire Wire Line
 	6200 1700 8100 1700
-Text GLabel 8100 1550 2    50   Input ~ 0
-PM
 Wire Wire Line
 	4900 3650 4700 3650
 Wire Wire Line
 	4700 3650 4700 1550
 Wire Wire Line
 	4700 1550 8100 1550
+Wire Wire Line
+	3950 4800 6100 4800
+Wire Wire Line
+	5300 4550 5300 4950
 Wire Bus Line
 	8100 4100 8100 5050
 Wire Bus Line
