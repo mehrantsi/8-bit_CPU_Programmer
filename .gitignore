@@ -3,3 +3,15 @@
 *.cache
 Assembler/.vs/Assembler/v16/.suo
 Assembler/Assembler/obj/project.assets.json
+*.dll
+*.exe
+*.pdb
+Assembler/Assembler/obj/Debug/netcoreapp3.1/Assembler.csproj.FileListAbsolute.txt
+Assembler/Assembler/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs
+Assembler/Assembler/obj/Debug/netcoreapp3.1/Assembler.AssemblyInfo.cs
+Assembler/Assembler/obj/Assembler.csproj.nuget.g.targets
+Assembler/Assembler/obj/Assembler.csproj.nuget.g.props
+Assembler/Assembler/obj/Assembler.csproj.nuget.dgspec.json
+Assembler/Assembler/bin/Debug/netcoreapp3.1/Assembler.runtimeconfig.json
+Assembler/Assembler/bin/Debug/netcoreapp3.1/Assembler.runtimeconfig.dev.json
+Assembler/Assembler/bin/Debug/netcoreapp3.1/Assembler.deps.json
