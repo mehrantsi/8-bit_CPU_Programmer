@@ -1,5 +1,0 @@
-C:\Users\mehran.toosi\source\repos\8-bit_CPU_Programmer\Assembler\Assembler\bin\Release\netcoreapp3.1\publish\Assembler.exe
-C:\Users\mehran.toosi\source\repos\8-bit_CPU_Programmer\Assembler\Assembler\bin\Release\netcoreapp3.1\publish\Assembler.dll
-C:\Users\mehran.toosi\source\repos\8-bit_CPU_Programmer\Assembler\Assembler\bin\Release\netcoreapp3.1\publish\Assembler.deps.json
-C:\Users\mehran.toosi\source\repos\8-bit_CPU_Programmer\Assembler\Assembler\bin\Release\netcoreapp3.1\publish\Assembler.runtimeconfig.json
-C:\Users\mehran.toosi\source\repos\8-bit_CPU_Programmer\Assembler\Assembler\bin\Release\netcoreapp3.1\publish\Assembler.pdb
