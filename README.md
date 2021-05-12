@@ -2,6 +2,7 @@
 
 ## Overview
 This project is meant to help programming MSAP-1 (Mehran's Simple as Possible) 8-bit computer project. The idea is to set the addresses and data of SRAM in MSAP-1 while it's in programming mode and enable reviewing what has been/is going to be programmed, when MSAP-1 is in run mode. This removes the need of having dip switches for programming, and enables writing code in assembly.
+
 In the Examples folder, you can find a few sample programs written in MSAP-1 assembly.
 
 ### Hardware
