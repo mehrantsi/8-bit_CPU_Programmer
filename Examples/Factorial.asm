@@ -1,0 +1,22 @@
+LDA $20
+STA $21
+LDA $21
+SUB $18
+JZ  $17
+STA $21
+LDA $20
+SUB $18
+JC  $13
+LDA $19
+STA $20
+LDS #0, $19
+JMP $2
+STA $20
+LDA $21
+ADS $19
+JMP $6
+OTH $20
+#1
+#0
+#5 ;input
+#0
