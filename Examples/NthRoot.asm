@@ -13,7 +13,7 @@ JMP $0
 #0
 #2
 #3 ;nth root to find
-#0 ;subtraction factor
+#0
 LDA $12
 STA $15
 LDA $36
