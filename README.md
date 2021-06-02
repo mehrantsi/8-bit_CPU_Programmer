@@ -6,7 +6,7 @@ This project is meant to help programming MSAP-1 (Mehran's Simple as Possible) 8
 In the Examples folder, you can find a few sample programs written in MSAP-1 assembly.
 
 ### Hardware
-The hardware side of this project, includes an Arduino Nano, 1 HW-125 SD card module, 2 SIPO shift registers (74HC595), 1 OLED display (128x64 with SSD1306 controller), 1 micro switch and a 10nF bypass capacitor for shift registers.
+The hardware side of this project, includes an Arduino Nano, 1 HW-125 SD card module, 2 SIPO shift registers (74HC595), 1 OLED display (128x64 with SSD1306 controller), 1 micro switch and a 10nF bypass capacitor for shift registers. Please note that SW1 is not debounced via a RC circuit due to lack of space on the breadboard. Debouncing is handled via a delay in the code, so it's a good practice to add an appropriate RC circuit if you like to create this on a perf board or a PCB.
 
 Schematic of the programmer:
 ![SCH](https://github.com/mehrantsi/8-bit_CPU_Programmer/blob/main/Schematics/Schematic.png)
